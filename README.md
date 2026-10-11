@@ -10,13 +10,13 @@ I believe most modern software is absurdly overengineered. If an application nee
 
 * **[grav-ai-chatbot](https://github.com/milkboyinchina/grav-ai-chatbot)**  
   An AI chatbot plugin for Grav CMS with local RAG, SQLite vector search, and leetspeak/jailbreak defenses.  
-  *Yes, the live demo on [milkboy.my.id](https://www.milkboy.my.id) is powered by a janky Intel Celeron N4100 mini-PC* running quantized AI via a private NetBird tunnel. At ~3.6 tokens/sec it’s not breaking speed records, but tight context trimming keeps it snappy in real time. (Don't judge me, I'm not made of money).
+  *Yes, the live demo on [milkboy.my.id](https://www.milkboy.my.id) is powered by a janky Intel Celeron N4100 mini-PC* running quantized Qwen via a private NetBird tunnel. At ~3.6 tokens/sec it’s not breaking speed records, but tight context trimming keeps it snappy in real time. (Don't judge me, I'm not made of money).
 
 * **[api-indonesia.com](https://api-indonesia.com)**  
   A clean, fast directory and documentation portal for public Indonesian APIs. Built on flat-file Grav CMS so pages load instantly without database connection pools crashing under traffic spikes.
 
 * **[docker-lamp-grav](https://github.com/milkboyinchina/docker-lamp-grav)**  
-  My personal Docker LAMP environment. No bloated layers—just Apache, PHP 8.3/8.4, MariaDB, and automated bash backup scripts that do their job and get out of the way.
+  My personal Docker LAMP environment. No bloated layers: just Apache, PHP 8.3/8.4, MariaDB, and automated bash backup scripts that do their job and get out of the way.
 
 * **[Milkys-Sound-Booster-EQ](https://github.com/milkboyinchina/Milkys-Sound-Booster-EQ)**  
   A native Android equalizer written in Kotlin when stock phone audio just wasn't loud enough.
