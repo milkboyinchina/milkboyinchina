@@ -42,5 +42,16 @@ Most of my heaviest work isn't public on GitHub because it runs behind private c
 
 ---
 
+### 🚧 Currently in the Works
+
+* **ANAIS (Android Node AI Server)**  
+  Turning Android phones into offline, on-device AI servers:
+  * **Dual-Process Architecture:** Kotlin & Jetpack Compose UI isolated from a native `:server` daemon via AIDL, preventing C++ crashes from killing the app.
+  * **C++20 NDK Engine:** Custom `IAIEngine` facade wrapping `llama.cpp` with dynamic SoC hardware acceleration.
+  * **Dynamic Memory Governor:** Real-time profiling against Android's `lmkd` kill lines to safely load 4B to 14B models without kernel panics.
+  * **Network Compatibility:** Serves an OpenAI-compatible REST API (`/v1/chat/completions`) and Ollama emulation over local WiFi and NetBird mesh.
+
+---
+
 ### Stack I Actually Trust
 `Linux` · `NetBird` · `Docker` · `Bash` · `PHP / Grav CMS` · `Python / Django` · `PostgreSQL` · `Ollama` · `Kotlin`
