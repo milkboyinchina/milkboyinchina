@@ -1,52 +1,46 @@
 # Hey, I'm Milkboy ☕
 
-I'm a generalist who likes building practical tools, tinkering with servers, and seeing how much performance I can squeeze out of minimal hardware.
+I build practical systems that run fast, cost almost nothing to host, and don't fall over when the internet blinks.
+
+I believe most modern software is absurdly overengineered. If an application needs 16GB of RAM and four cloud microservices just to serve text, the architecture is broken. I'd rather squeeze 110% performance out of modest hardware than burn money on cloud bills.
 
 ---
 
-### What I spend my time on
-* **SysOps & Zero-Trust Networking:** Linux server administration, Docker environments, and secure overlay networks with **NetBird**. I build zero-port remote access solutions for SMEs—letting staff securely access internal company resources from the public internet without port-forwarding, while giving managers centralized, granular access control (ACLs).
-* **Local AI & Edge Hardware:** Squeezing fast inference out of budget hardware. I prefer lightweight local models (Ollama, small Qwen models, SQLite vector search) over burning massive API budgets.
-* **Flat-file CMS & PHP:** Developing plugins and themes for Grav CMS so websites stay lean, responsive, and database-independent.
-
----
-
-### Stuff I've built (Public & Clickable)
+### 🛠️ The Workbench (Things You Can Actually Click)
 
 * **[grav-ai-chatbot](https://github.com/milkboyinchina/grav-ai-chatbot)**  
-  A chatbot plugin for Grav CMS with built-in RAG and prompt security.  
-  *Fun fact:* The live demo on [milkboy.my.id](https://www.milkboy.my.id) is routed through NetBird to an Ollama endpoint running on an old Intel Celeron N4100 mini PC. It runs at ~3.6 tokens/sec, but thanks to tight context trimming, it actually works!
+  An AI chatbot plugin for Grav CMS with local RAG, SQLite vector search, and leetspeak/jailbreak defenses.  
+  *Yes, the live demo on [milkboy.my.id](https://www.milkboy.my.id) is powered by a janky Intel Celeron N4100 mini-PC* running quantized AI via a private NetBird tunnel. At ~3.6 tokens/sec it’s not breaking speed records, but tight context trimming keeps it snappy in real time. (Don't judge me, I'm not made of money).
 
 * **[api-indonesia.com](https://api-indonesia.com)**  
-  A fast directory and documentation portal for Indonesian APIs, built on Grav CMS to keep page loads near-instant.
+  A clean, fast directory and documentation portal for public Indonesian APIs. Built on flat-file Grav CMS so pages load instantly without database connection pools crashing under traffic spikes.
 
 * **[docker-lamp-grav](https://github.com/milkboyinchina/docker-lamp-grav)**  
-  My personal plug-and-play Docker LAMP setup. Nothing bloated—just Apache, modern PHP, MariaDB, and automated backup scripts for running Grav or custom PHP apps.
+  My personal Docker LAMP environment. No bloated layers—just Apache, PHP 8.3/8.4, MariaDB, and automated bash backup scripts that do their job and get out of the way.
 
 * **[Milkys-Sound-Booster-EQ](https://github.com/milkboyinchina/Milkys-Sound-Booster-EQ)**  
-  A native Android audio equalizer written in Kotlin to boost volume and fine-tune playback.
+  A native Android equalizer written in Kotlin when stock phone audio just wasn't loud enough.
 
 ---
 
-### 🔒 Behind the Scenes (Private & Client Systems)
+### 💼 What I Do When I'm Not Tinkering
 
-Not everything I build is open-source. A lot of my day-to-day work lives in private client repos or internal servers:
+Most of my heaviest work isn't public on GitHub because it runs behind private client firewalls:
 
-* **SME Zero-Trust Remote Access (NetBird Infrastructure)**  
-  Architected and deployed secure remote access for small-to-medium businesses:
-  * Connected remote and mobile staff to internal office networks (file servers, internal portals, ERP) from the public internet without exposing any open ports.
-  * Configured granular manager access controls (peer-to-peer ACLs) with centralized device authorization and instant access revocation.
+* **Zero-Trust Remote Access for SMEs (NetBird Mesh):**  
+  Fixing the classic small business nightmare: remote staff need access to office file servers and internal tools, but opening router ports to the public internet is an invitation for bots to brute-force the network. I deploy zero-port NetBird mesh overlays that give staff secure access while giving managers granular control over who can touch what.
 
-* **MilkTechERP (Sovereign ERP Platform)**  
-  A self-hosted business operating platform built with Django and PostgreSQL:
-  * Multi-tenant PostgreSQL schema isolation over a private NetBird mesh.
-  * Native Indonesian statutory tax engines (PPh 21 TER calculations, BPJS, e-Faktur integration).
-  * Cryptographic Merkle WORM ledgers for tamper-proof audit trails.  
-  👉 *[Read the architectural whitepaper on my site](https://www.milkboy.my.id/blog/sovereign-erp-architecture)*
+* **MilkTechERP (Sovereign Business Platform):**  
+  A self-hosted, air-gapped business OS built with Django and PostgreSQL for businesses tired of paying monthly SaaS extortion. Handles real-world Indonesian statutory tax compliance (PPh 21 TER, BPJS, e-Faktur) and cryptographic Merkle WORM audit trails over private peer-to-peer networks.  
+  👉 *[Read the architecture breakdown](https://www.milkboy.my.id/blog/sovereign-erp-architecture)*
 
-* **Custom Client Infrastructure**  
-  Minimal-downtime server migrations, reverse proxy orchestration, and keeping small business backends fast and stable on modest infrastructure.
+* **AI Technical Due Diligence for Angel Investors:**  
+  Cutting through startup hype for early-stage investors. I audit raw benchmark logs, inspect codebases, and stress-test GPU compute burn rates to figure out if a pitch deck has real mathematical breakthroughs or is just burning investor runway on marketing.
+
+* **Minimal-Downtime SysOps:**  
+  Server migrations, reverse proxy routing, and keeping production systems humming on budget Linux VPS setups.
+
 ---
 
-### Tools I reach for
-`Linux` · `NetBird` · `Docker` · `Bash` · `PHP` · `Python` · `PostgreSQL` · `Ollama` · `Grav CMS` · `Kotlin`
+### Stack I Actually Trust
+`Linux` · `NetBird` · `Docker` · `Bash` · `PHP / Grav CMS` · `Python / Django` · `PostgreSQL` · `Ollama` · `Kotlin`
